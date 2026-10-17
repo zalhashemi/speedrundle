@@ -1,0 +1,516 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-17T14:00:43+00:00",
+  "title": "Design System: Speedrundle",
+  "extensions": {
+    "colorMeta": {
+      "cream": {
+        "role": "neutral",
+        "displayName": "Cream Paper",
+        "canonical": "#fff8ee",
+        "oklch": "oklch(98.2% 0.015 77.1)",
+        "tonalRamp": [
+          "oklch(15% 0.018 77.1)",
+          "oklch(26% 0.030 77.1)",
+          "oklch(38% 0.030 77.1)",
+          "oklch(50% 0.030 77.1)",
+          "oklch(62% 0.030 77.1)",
+          "oklch(74% 0.030 77.1)",
+          "oklch(85% 0.030 77.1)",
+          "oklch(95% 0.018 77.1)"
+        ]
+      },
+      "cream-deep": {
+        "role": "neutral",
+        "displayName": "Toasted Cream",
+        "canonical": "#fbecd6",
+        "oklch": "oklch(94.9% 0.033 77.6)",
+        "tonalRamp": [
+          "oklch(15% 0.020 77.6)",
+          "oklch(26% 0.033 77.6)",
+          "oklch(38% 0.033 77.6)",
+          "oklch(50% 0.033 77.6)",
+          "oklch(62% 0.033 77.6)",
+          "oklch(74% 0.033 77.6)",
+          "oklch(85% 0.033 77.6)",
+          "oklch(95% 0.020 77.6)"
+        ]
+      },
+      "ink": {
+        "role": "primary",
+        "displayName": "Midnight Plum",
+        "canonical": "#2b1b3d",
+        "oklch": "oklch(26.0% 0.064 304.0)",
+        "tonalRamp": [
+          "oklch(15% 0.038 304.0)",
+          "oklch(26% 0.064 304.0)",
+          "oklch(38% 0.064 304.0)",
+          "oklch(50% 0.064 304.0)",
+          "oklch(62% 0.064 304.0)",
+          "oklch(74% 0.064 304.0)",
+          "oklch(85% 0.064 304.0)",
+          "oklch(95% 0.038 304.0)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Dusk Plum",
+        "canonical": "#5b4670",
+        "oklch": "oklch(43.4% 0.072 306.6)",
+        "tonalRamp": [
+          "oklch(15% 0.043 306.6)",
+          "oklch(26% 0.072 306.6)",
+          "oklch(38% 0.072 306.6)",
+          "oklch(50% 0.072 306.6)",
+          "oklch(62% 0.072 306.6)",
+          "oklch(74% 0.072 306.6)",
+          "oklch(85% 0.072 306.6)",
+          "oklch(95% 0.043 306.6)"
+        ]
+      },
+      "mint": {
+        "role": "secondary",
+        "displayName": "Mint Candy",
+        "canonical": "#c8f0dc",
+        "oklch": "oklch(92.1% 0.050 163.6)",
+        "tonalRamp": [
+          "oklch(15% 0.030 163.6)",
+          "oklch(26% 0.050 163.6)",
+          "oklch(38% 0.050 163.6)",
+          "oklch(50% 0.050 163.6)",
+          "oklch(62% 0.050 163.6)",
+          "oklch(74% 0.050 163.6)",
+          "oklch(85% 0.050 163.6)",
+          "oklch(95% 0.030 163.6)"
+        ]
+      },
+      "peach": {
+        "role": "secondary",
+        "displayName": "Peach Candy",
+        "canonical": "#ffd9c2",
+        "oklch": "oklch(91.1% 0.053 53.0)",
+        "tonalRamp": [
+          "oklch(15% 0.032 53.0)",
+          "oklch(26% 0.053 53.0)",
+          "oklch(38% 0.053 53.0)",
+          "oklch(50% 0.053 53.0)",
+          "oklch(62% 0.053 53.0)",
+          "oklch(74% 0.053 53.0)",
+          "oklch(85% 0.053 53.0)",
+          "oklch(95% 0.032 53.0)"
+        ]
+      },
+      "lavender": {
+        "role": "secondary",
+        "displayName": "Lavender Candy",
+        "canonical": "#e2d7ff",
+        "oklch": "oklch(90.0% 0.055 297.9)",
+        "tonalRamp": [
+          "oklch(15% 0.033 297.9)",
+          "oklch(26% 0.055 297.9)",
+          "oklch(38% 0.055 297.9)",
+          "oklch(50% 0.055 297.9)",
+          "oklch(62% 0.055 297.9)",
+          "oklch(74% 0.055 297.9)",
+          "oklch(85% 0.055 297.9)",
+          "oklch(95% 0.033 297.9)"
+        ]
+      },
+      "butter": {
+        "role": "secondary",
+        "displayName": "Butter Candy",
+        "canonical": "#fff0a8",
+        "oklch": "oklch(95.1% 0.092 97.8)",
+        "tonalRamp": [
+          "oklch(15% 0.055 97.8)",
+          "oklch(26% 0.092 97.8)",
+          "oklch(38% 0.092 97.8)",
+          "oklch(50% 0.092 97.8)",
+          "oklch(62% 0.092 97.8)",
+          "oklch(74% 0.092 97.8)",
+          "oklch(85% 0.092 97.8)",
+          "oklch(95% 0.055 97.8)"
+        ]
+      },
+      "baby-blue": {
+        "role": "secondary",
+        "displayName": "Baby Blue Candy",
+        "canonical": "#cde7ff",
+        "oklch": "oklch(91.6% 0.043 246.1)",
+        "tonalRamp": [
+          "oklch(15% 0.026 246.1)",
+          "oklch(26% 0.043 246.1)",
+          "oklch(38% 0.043 246.1)",
+          "oklch(50% 0.043 246.1)",
+          "oklch(62% 0.043 246.1)",
+          "oklch(74% 0.043 246.1)",
+          "oklch(85% 0.043 246.1)",
+          "oklch(95% 0.026 246.1)"
+        ]
+      },
+      "pink": {
+        "role": "secondary",
+        "displayName": "Pink Candy",
+        "canonical": "#ffd3e6",
+        "oklch": "oklch(91.0% 0.055 350.4)",
+        "tonalRamp": [
+          "oklch(15% 0.033 350.4)",
+          "oklch(26% 0.055 350.4)",
+          "oklch(38% 0.055 350.4)",
+          "oklch(50% 0.055 350.4)",
+          "oklch(62% 0.055 350.4)",
+          "oklch(74% 0.055 350.4)",
+          "oklch(85% 0.055 350.4)",
+          "oklch(95% 0.033 350.4)"
+        ]
+      },
+      "gold": {
+        "role": "primary",
+        "displayName": "Trophy Gold",
+        "canonical": "#ffc93c",
+        "oklch": "oklch(86.1% 0.159 86.4)",
+        "tonalRamp": [
+          "oklch(15% 0.096 86.4)",
+          "oklch(26% 0.159 86.4)",
+          "oklch(38% 0.159 86.4)",
+          "oklch(50% 0.159 86.4)",
+          "oklch(62% 0.159 86.4)",
+          "oklch(74% 0.159 86.4)",
+          "oklch(85% 0.159 86.4)",
+          "oklch(95% 0.096 86.4)"
+        ]
+      },
+      "gold-deep": {
+        "role": "primary",
+        "displayName": "Deep Marigold",
+        "canonical": "#f2a900",
+        "oklch": "oklch(78.5% 0.164 77.6)",
+        "tonalRamp": [
+          "oklch(15% 0.096 77.6)",
+          "oklch(26% 0.160 77.6)",
+          "oklch(38% 0.160 77.6)",
+          "oklch(50% 0.160 77.6)",
+          "oklch(62% 0.160 77.6)",
+          "oklch(74% 0.160 77.6)",
+          "oklch(85% 0.160 77.6)",
+          "oklch(95% 0.096 77.6)"
+        ]
+      },
+      "danger": {
+        "role": "tertiary",
+        "displayName": "Alarm Crimson",
+        "canonical": "#b4233c",
+        "oklch": "oklch(50.5% 0.179 17.8)",
+        "tonalRamp": [
+          "oklch(15% 0.096 17.8)",
+          "oklch(26% 0.160 17.8)",
+          "oklch(38% 0.160 17.8)",
+          "oklch(50% 0.160 17.8)",
+          "oklch(62% 0.160 17.8)",
+          "oklch(74% 0.160 17.8)",
+          "oklch(85% 0.160 17.8)",
+          "oklch(95% 0.096 17.8)"
+        ]
+      },
+      "danger-soft": {
+        "role": "tertiary",
+        "displayName": "Blush Alarm",
+        "canonical": "#ffd6dc",
+        "oklch": "oklch(91.2% 0.046 8.1)",
+        "tonalRamp": [
+          "oklch(15% 0.028 8.1)",
+          "oklch(26% 0.046 8.1)",
+          "oklch(38% 0.046 8.1)",
+          "oklch(50% 0.046 8.1)",
+          "oklch(62% 0.046 8.1)",
+          "oklch(74% 0.046 8.1)",
+          "oklch(85% 0.046 8.1)",
+          "oklch(95% 0.028 8.1)"
+        ]
+      },
+      "focus-violet": {
+        "role": "tertiary",
+        "displayName": "Electric Violet",
+        "canonical": "#6a3df0",
+        "oklch": "oklch(53.0% 0.247 285.9)",
+        "tonalRamp": [
+          "oklch(15% 0.096 285.9)",
+          "oklch(26% 0.160 285.9)",
+          "oklch(38% 0.160 285.9)",
+          "oklch(50% 0.160 285.9)",
+          "oklch(62% 0.160 285.9)",
+          "oklch(74% 0.160 285.9)",
+          "oklch(85% 0.160 285.9)",
+          "oklch(95% 0.096 285.9)"
+        ]
+      },
+      "white": {
+        "role": "neutral",
+        "displayName": "White",
+        "canonical": "#ffffff",
+        "tonalRamp": [
+          "oklch(15% 0 0)",
+          "oklch(26% 0 0)",
+          "oklch(38% 0 0)",
+          "oklch(50% 0 0)",
+          "oklch(62% 0 0)",
+          "oklch(74% 0 0)",
+          "oklch(85% 0 0)",
+          "oklch(95% 0 0)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "timer": {
+        "displayName": "Timer",
+        "purpose": "Live run clock and result total; always through equal digit boxes."
+      },
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page h1s: result title, onboarding steps, now-playing game."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Dashboard section headings."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Status line, card names, sticker time readouts."
+      },
+      "button": {
+        "displayName": "Button",
+        "purpose": "All button labels."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Sentences and help text."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Stat labels, badges, table headers, chips; sentence case."
+      },
+      "table-numeral": {
+        "displayName": "Table Numeral",
+        "purpose": "Times in tables, tabular-nums."
+      }
+    },
+    "shadows": [
+      {
+        "name": "sticker-lift",
+        "value": "4px 4px 0 #2b1b3d",
+        "purpose": "Default for buttons, stickers, the split strip, unselected game cards."
+      },
+      {
+        "name": "small-lift",
+        "value": "3px 3px 0 #2b1b3d",
+        "purpose": "Small and icon buttons."
+      },
+      {
+        "name": "selected-lift",
+        "value": "6px 6px 0 #2b1b3d",
+        "purpose": "A selected game card."
+      },
+      {
+        "name": "gold-lift",
+        "value": "4px 4px 0 #f2a900",
+        "purpose": "Primary plum buttons; 6px on the hero start button; 3px on the selected chart bar."
+      },
+      {
+        "name": "danger-lift",
+        "value": "4px 4px 0 #b4233c",
+        "purpose": "Danger buttons."
+      },
+      {
+        "name": "pressed",
+        "value": "0 0 0 #2b1b3d",
+        "purpose": "Active state of every lifted element."
+      },
+      {
+        "name": "focus-ring",
+        "value": "outline: 3px solid #6a3df0; outline-offset: 3px",
+        "purpose": "Every focusable element."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "State transitions (140ms press/hover, 40ms on active) and rise-in."
+      },
+      {
+        "name": "ease-pop",
+        "value": "cubic-bezier(0.34, 1.56, 0.64, 1)",
+        "purpose": "Pop-in of the mascot and selection check."
+      },
+      {
+        "name": "pop-in",
+        "value": "420ms ease-pop, scale 0.6 to 1 with fade",
+        "purpose": "Arrivals: result mascot, game-card check."
+      },
+      {
+        "name": "rise-in",
+        "value": "520ms ease-out, 14px up with fade",
+        "purpose": "Inline stickers that appear: add-game form, backup nudge, reset confirm."
+      },
+      {
+        "name": "wobble",
+        "value": "2.6s ease-in-out infinite, rotate -3deg to 3deg",
+        "purpose": "Onboarding mascot."
+      },
+      {
+        "name": "tick",
+        "value": "1s steps(1) infinite, opacity to 0.35",
+        "purpose": "Paused timer blink."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Disables pop-in, rise-in, wobble, tick, strip pulse, button transitions and confetti."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "lg",
+        "value": "1024px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Button",
+      "kind": "button",
+      "refersTo": "button",
+      "description": "Default white sticker pill; presses flat on tap.",
+      "html": "<button class=\"ds-btn\">Open game again</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.6rem 1.25rem;border:3px solid var(--ink,#2b1b3d);border-radius:999px;background:#fff;color:var(--ink,#2b1b3d);font-family:var(--font-fredoka),Fredoka,ui-rounded,system-ui,sans-serif;font-weight:600;font-size:1.0625rem;line-height:1.1;box-shadow:4px 4px 0 var(--ink,#2b1b3d);cursor:pointer;transition:transform 140ms cubic-bezier(.16,1,.3,1),box-shadow 140ms cubic-bezier(.16,1,.3,1),background-color 140ms}.ds-btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink,#2b1b3d)}.ds-btn:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--ink,#2b1b3d);transition-duration:40ms}.ds-btn:focus-visible{outline:3px solid var(--focus,#6a3df0);outline-offset:3px}"
+    },
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Plum pill with a gold lift for the one main action per screen.",
+      "html": "<button class=\"ds-btn ds-btn-primary\">Done, next game</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.6rem 1.25rem;border:3px solid var(--ink,#2b1b3d);border-radius:999px;background:#fff;color:var(--ink,#2b1b3d);font-family:var(--font-fredoka),Fredoka,ui-rounded,system-ui,sans-serif;font-weight:600;font-size:1.0625rem;line-height:1.1;box-shadow:4px 4px 0 var(--ink,#2b1b3d);cursor:pointer;transition:transform 140ms cubic-bezier(.16,1,.3,1),box-shadow 140ms cubic-bezier(.16,1,.3,1),background-color 140ms}.ds-btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink,#2b1b3d)}.ds-btn:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--ink,#2b1b3d);transition-duration:40ms}.ds-btn:focus-visible{outline:3px solid var(--focus,#6a3df0);outline-offset:3px}.ds-btn-primary{background:var(--ink,#2b1b3d);color:var(--cream,#fff8ee);box-shadow:4px 4px 0 var(--gold-deep,#f2a900);min-height:64px;font-size:1.25rem;width:100%}.ds-btn-primary:hover{box-shadow:5px 5px 0 var(--gold-deep,#f2a900)}.ds-btn-primary:active{box-shadow:0 0 0 var(--gold-deep,#f2a900)}"
+    },
+    {
+      "name": "Ghost Button",
+      "kind": "button",
+      "refersTo": "button-ghost",
+      "description": "Quiet underlined escape for undo and reset.",
+      "html": "<button class=\"ds-btn ds-btn-ghost\">Undo</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.6rem 1.25rem;border:3px solid var(--ink,#2b1b3d);border-radius:999px;background:#fff;color:var(--ink,#2b1b3d);font-family:var(--font-fredoka),Fredoka,ui-rounded,system-ui,sans-serif;font-weight:600;font-size:1.0625rem;line-height:1.1;box-shadow:4px 4px 0 var(--ink,#2b1b3d);cursor:pointer;transition:transform 140ms cubic-bezier(.16,1,.3,1),box-shadow 140ms cubic-bezier(.16,1,.3,1),background-color 140ms}.ds-btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink,#2b1b3d)}.ds-btn:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--ink,#2b1b3d);transition-duration:40ms}.ds-btn:focus-visible{outline:3px solid var(--focus,#6a3df0);outline-offset:3px}.ds-btn-ghost{border-color:transparent;background:transparent;box-shadow:none;text-decoration:underline;text-underline-offset:.2em;min-height:40px;padding:.4rem .9rem;font-size:.95rem}.ds-btn-ghost:hover,.ds-btn-ghost:active{transform:none;box-shadow:none;background:rgb(43 27 61/.06)}"
+    },
+    {
+      "name": "Danger Button",
+      "kind": "button",
+      "refersTo": "button-danger",
+      "description": "Destructive actions: blush fill, crimson ink and shadow.",
+      "html": "<button class=\"ds-btn ds-btn-danger\">Erase everything</button>",
+      "css": ".ds-btn{display:inline-flex;align-items:center;justify-content:center;gap:.5rem;min-height:48px;padding:.6rem 1.25rem;border:3px solid var(--ink,#2b1b3d);border-radius:999px;background:#fff;color:var(--ink,#2b1b3d);font-family:var(--font-fredoka),Fredoka,ui-rounded,system-ui,sans-serif;font-weight:600;font-size:1.0625rem;line-height:1.1;box-shadow:4px 4px 0 var(--ink,#2b1b3d);cursor:pointer;transition:transform 140ms cubic-bezier(.16,1,.3,1),box-shadow 140ms cubic-bezier(.16,1,.3,1),background-color 140ms}.ds-btn:hover{transform:translate(-1px,-1px);box-shadow:5px 5px 0 var(--ink,#2b1b3d)}.ds-btn:active{transform:translate(4px,4px);box-shadow:0 0 0 var(--ink,#2b1b3d);transition-duration:40ms}.ds-btn:focus-visible{outline:3px solid var(--focus,#6a3df0);outline-offset:3px}.ds-btn-danger{background:var(--danger-soft,#ffd6dc);color:var(--danger,#b4233c);border-color:var(--danger,#b4233c);box-shadow:4px 4px 0 var(--danger,#b4233c)}.ds-btn-danger:hover{box-shadow:5px 5px 0 var(--danger,#b4233c)}.ds-btn-danger:active{box-shadow:0 0 0 var(--danger,#b4233c)}"
+    },
+    {
+      "name": "Text Input",
+      "kind": "input",
+      "refersTo": "input",
+      "description": "White field, 3px plum border, 12px radius; crimson with blush halo when invalid.",
+      "html": "<input class=\"ds-input\" placeholder=\"https://example.com/puzzle\" /><input class=\"ds-input\" aria-invalid=\"true\" value=\"not a link\" />",
+      "css": ".ds-input{display:block;width:100%;min-height:48px;margin-bottom:12px;padding:.6rem .9rem;border:3px solid var(--ink,#2b1b3d);border-radius:12px;background:#fff;color:var(--ink,#2b1b3d);font-family:var(--font-nunito),Nunito,ui-rounded,system-ui,sans-serif;font-size:1.0625rem}.ds-input::placeholder{color:var(--ink-soft,#5b4670)}.ds-input:focus-visible{outline:3px solid var(--focus,#6a3df0);outline-offset:3px}.ds-input[aria-invalid=true]{border-color:var(--danger,#b4233c);box-shadow:0 0 0 3px var(--danger-soft,#ffd6dc)}"
+    },
+    {
+      "name": "Navigation Bar",
+      "kind": "nav",
+      "description": "Wordmark left, small pill buttons right.",
+      "html": "<header class=\"ds-nav\"><a class=\"ds-mark\" href=\"#\"><svg viewBox=\"0 0 40 40\" width=\"36\" height=\"36\" aria-hidden=\"true\"><rect x=\"16\" y=\"2\" width=\"8\" height=\"6\" rx=\"2\" fill=\"#ffc93c\" stroke=\"#2b1b3d\" stroke-width=\"2.5\"/><circle cx=\"20\" cy=\"23\" r=\"14\" fill=\"#cde7ff\" stroke=\"#2b1b3d\" stroke-width=\"3\"/><path d=\"M20 23 L20 14 M20 23 L26 26\" stroke=\"#2b1b3d\" stroke-width=\"3\" stroke-linecap=\"round\"/></svg><span>Speed<span class=\"ds-mark-b\">rundle</span></span></a><nav><button class=\"ds-nb\" aria-label=\"Settings\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2.5\" stroke-linecap=\"round\" stroke-linejoin=\"round\"><circle cx=\"12\" cy=\"12\" r=\"3\"/><path d=\"M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 1 1-2.83 2.83l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 1 1-4 0v-.09a1.65 1.65 0 0 0-1-1.51 1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 1 1-2.83-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 1 1 0-4h.09a1.65 1.65 0 0 0 1.51-1 1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 1 1 2.83-2.83l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1-1.51V3a2 2 0 1 1 4 0v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 1 1 2.83 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 1 1 0 4h-.09a1.65 1.65 0 0 0-1.51 1z\"/></svg></button></nav></header>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:12px 16px;background:var(--cream,#fff8ee)}.ds-mark{display:inline-flex;align-items:center;gap:8px;font-family:var(--font-fredoka),Fredoka,ui-rounded,system-ui,sans-serif;font-weight:700;font-size:1.45rem;color:var(--ink,#2b1b3d);text-decoration:none}.ds-mark-b{color:#7a4fd6}.ds-nb{display:inline-grid;place-items:center;width:44px;height:44px;border:3px solid var(--ink,#2b1b3d);border-radius:999px;background:#fff;color:var(--ink,#2b1b3d);box-shadow:3px 3px 0 var(--ink,#2b1b3d);cursor:pointer;transition:transform 140ms cubic-bezier(.16,1,.3,1),box-shadow 140ms}.ds-nb:hover{transform:translate(-1px,-1px);box-shadow:4px 4px 0 var(--ink,#2b1b3d)}.ds-nb:active{transform:translate(3px,3px);box-shadow:none}.ds-nb:focus-visible{outline:3px solid var(--focus,#6a3df0);outline-offset:3px}"
+    },
+    {
+      "name": "Sticker Card",
+      "kind": "card",
+      "refersTo": "sticker-card",
+      "description": "The shared material: outlined slab with a hard plum lift.",
+      "html": "<section class=\"ds-sticker\"><p class=\"ds-st-n\">5</p><p class=\"ds-st-l\">Day streak</p></section>",
+      "css": ".ds-sticker{display:inline-flex;flex-direction:column;align-items:center;padding:12px 16px;border:3px solid var(--ink,#2b1b3d);border-radius:18px;background:var(--butter,#fff0a8);color:var(--ink,#2b1b3d);box-shadow:4px 4px 0 var(--ink,#2b1b3d);transform:rotate(-2deg)}.ds-st-n{margin:0;font-family:var(--font-fredoka),Fredoka,ui-rounded,sans-serif;font-weight:700;font-size:2rem;line-height:1}.ds-st-l{margin:4px 0 0;font-family:var(--font-nunito),Nunito,sans-serif;font-weight:700;font-size:.875rem}"
+    },
+    {
+      "name": "Split Strip",
+      "kind": "custom",
+      "refersTo": "split-strip",
+      "description": "Signature: a run as plum-separated candy blocks sized by time; gold best split, hatched skip.",
+      "html": "<div class=\"ds-strip\" role=\"img\" aria-label=\"Wordle 1:24, Connections 1:59 best, NYT Mini skipped, Spelling Bee 7:19\"><div class=\"ds-b\" style=\"flex-grow:84;background:#c8f0dc\"></div><div class=\"ds-b\" style=\"flex-grow:119;background:#ffc93c\"><span>&#9733; 1:59</span></div><div class=\"ds-b ds-hatch\" style=\"flex-grow:40\"></div><div class=\"ds-b\" style=\"flex-grow:439;background:#ffd9c2\"><span>7:19</span></div></div>",
+      "css": ".ds-strip{display:flex;height:48px;overflow:hidden;border:3px solid var(--ink,#2b1b3d);border-radius:999px;background:#fff;box-shadow:4px 4px 0 var(--ink,#2b1b3d)}.ds-b{display:flex;align-items:center;justify-content:center;flex-basis:0;min-width:12px;font-family:var(--font-fredoka),Fredoka,ui-rounded,sans-serif;font-weight:600;font-size:.875rem;color:var(--ink,#2b1b3d)}.ds-b+.ds-b{border-left:3px solid var(--ink,#2b1b3d)}.ds-hatch{background-color:var(--cream-deep,#fbecd6);background-image:repeating-linear-gradient(-45deg,rgb(43 27 61/.28) 0 2px,transparent 2px 7px)}"
+    },
+    {
+      "name": "Gold Chip",
+      "kind": "chip",
+      "refersTo": "gold-chip",
+      "description": "Marks a best split or delta; gold only for bests.",
+      "html": "<span class=\"ds-gold\"><svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" aria-hidden=\"true\"><path fill=\"#2b1b3d\" d=\"M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z\"/></svg>-0:12.4</span>",
+      "css": ".ds-gold{display:inline-flex;align-items:center;gap:4px;padding:0 8px;border:2px solid var(--ink,#2b1b3d);border-radius:999px;background:var(--gold,#ffc93c);color:var(--ink,#2b1b3d);font-family:var(--font-fredoka),Fredoka,ui-rounded,sans-serif;font-weight:600;font-size:.875rem}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Candy Shop Split Strip",
+    "overview": "**Creative North Star: \"The Candy Shop Split Strip\"**\n\nSpeedrundle is a sticker sheet on a cream counter. Every surface is a die-cut sticker: a white or pastel slab with a 3px plum outline and a hard 4px plum shadow offset down and to the right, which presses flat when tapped. The ground is warm cream with a faint 22px plum dot grid, so the page reads as paper rather than screen. Six candy pastels give each game its own colour, plum carries all text and every outline, and gold is held back for one job: marking a personal best.\n\nThe signature is the split strip. A run is drawn as a pill of coloured blocks, one per game, separated by plum rules. The same strip appears as live run progress (equal blocks), as the result (blocks sized by time, gold for best splits, hatched for skipped), on the dashboard as the latest run, and stacked vertically as the bars of the 14-day chart. New surfaces that show a run show it this way.\n\nThe world is playful but phone-first and morning-tired: big round tap targets (48px minimum), one dominant action per screen, rounded type, and an original stopwatch mascot. It is light only. It refuses the grey stopwatch app and the stat-tile SaaS dashboard.",
+    "keyCharacteristics": [
+      "Cream dotted ground, plum ink, six game pastels, gold for bests only.",
+      "3px plum outlines and 4px hard offset shadows that press flat on tap.",
+      "Generous radius: 12px fields, 18px stickers, 28px hero button, pills for buttons and the strip.",
+      "Fredoka for display and numerals (through equal-width digit boxes), Nunito for body and tables.",
+      "The split strip is the one shape every run takes.",
+      "Light only; reduced motion turns off all decorative movement."
+    ],
+    "rules": [
+      {
+        "name": "The Gold Means Best Rule",
+        "body": "Gold (#ffc93c) marks a personal best or a best split and nothing else. It is never a game colour, a decoration, or a generic highlight.",
+        "section": "colors"
+      },
+      {
+        "name": "The Never Colour Alone Rule",
+        "body": "The pastels are too close to identify games by hue and fail a categorical-chart check. Game identity is always carried by something else too: plum separators between blocks, a named readout under the chart, a labelled table row, a named dot list, and diagonal hatching for skipped splits.",
+        "section": "colors"
+      },
+      {
+        "name": "The Dusk Plum Floor Rule",
+        "body": "Secondary text is Dusk Plum (#5b4670) or darker, never a lighter tint, so it holds AA on cream, every pastel and gold.",
+        "section": "colors"
+      },
+      {
+        "name": "The Equal Digit Rule",
+        "body": "Fredoka has no tabular figures. Every Fredoka time readout (timer, strip labels, result rows, stat stickers, chart readout) renders through the digit-box treatment: each digit in a 0.62em centred box, separators at natural width, so ticking numbers never jitter. Do not rely on `tabular-nums` with Fredoka; it does nothing.",
+        "section": "typography"
+      },
+      {
+        "name": "The Table Voice Rule",
+        "body": "Columns of times in tables use Nunito with tabular-nums, not Fredoka, so they align as a column.",
+        "section": "typography"
+      },
+      {
+        "name": "The Press Flat Rule",
+        "body": "Anything with a lift is tappable or is a record sticker; on press it translates by the full lift distance and its shadow drops to zero. Disabled controls keep their shadow but sit at 50% opacity and do not move.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** give every tappable surface or record sticker the 3px plum outline and a hard offset shadow (4px plum by default, gold under plum buttons) that presses flat on tap.",
+      "**Do** draw any run as the split strip: plum-separated blocks in game pastels, gold for best splits, hatch for skipped.",
+      "**Do** pair every use of a game pastel with a name, a label, a plum separator or hatching.",
+      "**Do** render Fredoka times through the 0.62em equal digit boxes, and table times in Nunito with tabular-nums.",
+      "**Do** keep secondary text at Dusk Plum (#5b4670) or darker.",
+      "**Do** keep tap targets at 44px or more, 48px for standard buttons and fields.",
+      "**Do** gate every decorative animation and confetti behind prefers-reduced-motion."
+    ],
+    "donts": [
+      "**Don't** use gold for anything but personal bests and best splits.",
+      "**Don't** identify a game by pastel colour alone.",
+      "**Don't** use blurred or ambient shadows; depth here is hard and offset.",
+      "**Don't** add a dark mode; the system is light only.",
+      "**Don't** set Fredoka numerals that change in place without equal digit boxes.",
+      "**Don't** use the games' logos or artwork; game art is original illustration on the game's pastel."
+    ]
+  }
+}

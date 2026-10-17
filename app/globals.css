@@ -1,26 +1,281 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --cream: #fff8ee;
+  --cream-deep: #fbecd6;
+  --ink: #2b1b3d;
+  --ink-soft: #5b4670; /* secondary text, AA on cream and every pastel */
+  --mint: #c8f0dc;
+  --peach: #ffd9c2;
+  --lavender: #e2d7ff;
+  --butter: #fff0a8;
+  --blue: #cde7ff;
+  --pink: #ffd3e6;
+  --gold: #ffc93c;
+  --gold-deep: #f2a900;
+  --danger: #b4233c;
+  --danger-soft: #ffd6dc;
+  --focus: #6a3df0;
+
+  --r-sm: 12px;
+  --r-md: 18px;
+  --r-lg: 28px;
+  --line: 3px;
+  --lift: 4px;
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-pop: cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-cream: var(--cream);
+  --color-cream-deep: var(--cream-deep);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-mint: var(--mint);
+  --color-peach: var(--peach);
+  --color-lavender: var(--lavender);
+  --color-butter: var(--butter);
+  --color-blue: var(--blue);
+  --color-pink: var(--pink);
+  --color-gold: var(--gold);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --font-display: var(--font-fredoka);
+  --font-sans: var(--font-nunito);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  color-scheme: light;
+  background: var(--cream);
+  -webkit-tap-highlight-color: transparent;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--cream);
+  background-image: radial-gradient(circle at 1px 1px, rgb(43 27 61 / 0.07) 1.2px, transparent 0);
+  background-size: 22px 22px;
+  color: var(--ink);
+  font-family: var(--font-nunito), ui-rounded, system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.5;
+  caret-color: var(--ink);
+}
+
+::selection {
+  background: var(--butter);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 3px solid var(--focus);
+  outline-offset: 3px;
+}
+
+* {
+  scrollbar-color: var(--ink) var(--cream-deep);
+}
+
+h1,
+h2,
+h3,
+.font-display {
+  font-family: var(--font-fredoka), ui-rounded, system-ui, sans-serif;
+  text-wrap: balance;
+  letter-spacing: -0.01em;
+}
+
+a {
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 2px;
+}
+
+.tabular {
+  font-variant-numeric: tabular-nums;
+}
+.digit {
+  display: inline-block;
+  width: 0.62em;
+  text-align: center;
+}
+
+/* ── Sticker: the shared material. Plum outline + hard plum shadow that presses flat. ── */
+.sticker {
+  border: var(--line) solid var(--ink);
+  border-radius: var(--r-md);
+  box-shadow: var(--lift) var(--lift) 0 var(--ink);
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  min-height: 48px;
+  padding: 0.6rem 1.25rem;
+  border: var(--line) solid var(--ink);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--ink);
+  font-family: var(--font-fredoka), ui-rounded, system-ui, sans-serif;
+  font-weight: 600;
+  font-size: 1.0625rem;
+  line-height: 1.1;
+  box-shadow: var(--lift) var(--lift) 0 var(--ink);
+  cursor: pointer;
+  user-select: none;
+  transition:
+    transform 140ms var(--ease-out),
+    box-shadow 140ms var(--ease-out),
+    background-color 140ms;
+}
+.btn:hover {
+  transform: translate(-1px, -1px);
+  box-shadow: calc(var(--lift) + 1px) calc(var(--lift) + 1px) 0 var(--ink);
+}
+.btn:active {
+  transform: translate(var(--lift), var(--lift));
+  box-shadow: 0 0 0 var(--ink);
+  transition-duration: 40ms;
+}
+.btn:disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+  transform: none;
+  box-shadow: var(--lift) var(--lift) 0 var(--ink);
+}
+.btn-primary {
+  background: var(--ink);
+  color: var(--cream);
+  box-shadow: var(--lift) var(--lift) 0 var(--gold-deep);
+}
+.btn-primary:hover {
+  box-shadow: calc(var(--lift) + 1px) calc(var(--lift) + 1px) 0 var(--gold-deep);
+}
+.btn-primary:disabled {
+  box-shadow: var(--lift) var(--lift) 0 var(--gold-deep);
+}
+.btn-ghost {
+  border-color: transparent;
+  background: transparent;
+  box-shadow: none;
+  text-decoration: underline;
+  text-underline-offset: 0.2em;
+}
+.btn-ghost:hover,
+.btn-ghost:active {
+  transform: none;
+  box-shadow: none;
+  background: rgb(43 27 61 / 0.06);
+}
+.btn-danger {
+  background: var(--danger-soft);
+  color: var(--danger);
+  border-color: var(--danger);
+  box-shadow: var(--lift) var(--lift) 0 var(--danger);
+}
+.btn-sm {
+  min-height: 40px;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.95rem;
+  --lift: 3px;
+}
+.btn-icon {
+  min-height: 44px;
+  min-width: 44px;
+  padding: 0;
+  --lift: 3px;
+}
+
+.bg-pastel-mint { background: var(--mint); }
+.bg-pastel-peach { background: var(--peach); }
+.bg-pastel-lavender { background: var(--lavender); }
+.bg-pastel-butter { background: var(--butter); }
+.bg-pastel-blue { background: var(--blue); }
+.bg-pastel-pink { background: var(--pink); }
+
+/* Skipped split: hatched, so it never relies on colour alone. */
+.hatch {
+  background-color: var(--cream-deep);
+  background-image: repeating-linear-gradient(
+    -45deg,
+    rgb(43 27 61 / 0.28) 0 2px,
+    transparent 2px 7px
+  );
+}
+
+.input {
+  width: 100%;
+  min-height: 48px;
+  padding: 0.6rem 0.9rem;
+  border: var(--line) solid var(--ink);
+  border-radius: var(--r-sm);
+  background: #fff;
+  color: var(--ink);
+  font: inherit;
+}
+.input::placeholder {
+  color: var(--ink-soft);
+}
+.input[aria-invalid="true"] {
+  border-color: var(--danger);
+  box-shadow: 0 0 0 3px var(--danger-soft);
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .pop-in {
+    animation: pop-in 420ms var(--ease-pop) both;
+  }
+  .rise-in {
+    animation: rise-in 520ms var(--ease-out) both;
+  }
+  .wobble {
+    animation: wobble 2.6s ease-in-out infinite;
+    transform-origin: 50% 90%;
+  }
+  .tick {
+    animation: tick 1s steps(1) infinite;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn,
+  .btn:hover,
+  .btn:active {
+    transition: none;
+  }
+}
+
+@keyframes pop-in {
+  from {
+    transform: scale(0.6);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+@keyframes rise-in {
+  from {
+    transform: translateY(14px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
+@keyframes wobble {
+  0%,
+  100% {
+    transform: rotate(-3deg);
+  }
+  50% {
+    transform: rotate(3deg);
+  }
+}
+@keyframes tick {
+  50% {
+    opacity: 0.35;
+  }
 }

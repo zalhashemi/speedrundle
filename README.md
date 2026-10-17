@@ -1,36 +1,88 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Speedrundle ⏱️
 
-## Getting Started
+**Your daily puzzles, played as one speedrun.**
 
-First, run the development server:
+Pick the daily puzzle games you already play: Wordle, Connections, NYT Mini, Spelling Bee, Globle and more. Press **Start** and Speedrundle opens each game in a new tab, one after another, timing every split. It keeps your streak, personal bests, best splits and sum of best, the way speedrunners do.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![Speedrundle dashboard](docs/dashboard.png)
+
+<p>
+  <img src="docs/onboarding.png" alt="Onboarding" width="240">
+  <img src="docs/picker.png" alt="Game picker" width="240">
+  <img src="docs/run.png" alt="Run mode" width="240">
+</p>
+
+## Features
+
+- **Onboarding in three steps.** No sign-up: pick your games and go.
+- **Game picker.** Each game gets an original illustration and a badge if it needs a login or subscription. The **Other** card adds any game by link. Reorder games by drag, keyboard or arrow buttons.
+- **Run mode.** One button records your split and opens the next game. You can reopen, skip, pause, undo and reset (with confirmation), so you're never stuck. The site can't see inside the games, so you tap **Done** when you finish.
+- **Records:**
+  - the day streak;
+  - a personal best for each set of games, like a speedrun category;
+  - your best split per game;
+  - sum of best;
+  - a 14-day chart and a history table.
+- **Celebrations.** New bests turn gold, and a new PB gets confetti, unless the system asks for reduced motion.
+- **Private by design.** Everything lives in your browser's `localStorage`. There are no accounts, cookies, analytics or server. Settings lets you download a backup, restore by merging or replacing, and erase everything.
+
+### Included games
+
+| Game | Link | Access |
+|---|---|---|
+| Wordle | nytimes.com/games/wordle | Free (may ask you to log in) |
+| Connections | nytimes.com/games/connections | Free (may ask you to log in) |
+| NYT Mini | nytimes.com/crosswords/game/mini | Subscription |
+| NYT Crossword | nytimes.com/crosswords/game/daily | Subscription |
+| NYT Spelling Bee | nytimes.com/puzzles/spelling-bee | Subscription |
+| Washington Post Crossword | washingtonpost.com/games/crossword | Free |
+| Globle | globle-game.com | Free |
+| Bandle | bandle.app | Free |
+| Spotle | spotle.io | Free |
+
+Links and access were checked in a real browser on 2026-10-17. To add or fix a game, edit `lib/games.ts`.
+
+## Tech
+
+- [Next.js](https://nextjs.org) 16 (App Router) with `output: "export"`, built as a fully static site
+- Tailwind CSS v4 and hand-written design tokens in `app/globals.css`
+- [Zustand](https://zustand.docs.pmnd.rs) with `persist`, saving to `localStorage`
+- [dnd-kit](https://dndkit.com) for accessible reordering, [lucide](https://lucide.dev) icons and [canvas-confetti](https://github.com/catdad/canvas-confetti)
+- Vitest for unit tests, and Playwright with axe-core for end-to-end and accessibility tests
+
+```
+app/          routes: / (onboarding), /dashboard, /games, /settings, /about
+components/   GameCard, GamePicker, SplitStrip, HistoryChart, RunPanel, ResultPanel, Mascot, illustrations…
+lib/          games catalog, timing engine, stats, store, import/export, strings
+tests/        unit (timing, stats, backups, URL validation) and e2e (full flow + axe)
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+All user-facing copy lives in `lib/strings.ts`, ready for translation. The visual system is documented in [`DESIGN.md`](DESIGN.md).
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Getting started
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm install
+npm run dev            # http://localhost:3000
+```
 
-## Learn More
+| Command | What it does |
+|---|---|
+| `npm test` | Unit tests (Vitest) |
+| `npm run build` | Static export into `out/` |
+| `npm run test:e2e` | End-to-end flow and accessibility checks on phone and desktop (run `npm run build` first) |
+| `npm run lint` | ESLint |
 
-To learn more about Next.js, take a look at the following resources:
+Run `npx playwright install chromium` once before the first end-to-end run.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Deploy to Netlify (free)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+**From GitHub (recommended):** in Netlify, choose Add new site → Import an existing project and pick this repo. `netlify.toml` already sets the build command (`npm run build`), the publish folder (`out`) and Node 24. Every push redeploys.
 
-## Deploy on Vercel
+**Drag and drop:** run `npm run build` and drop the `out/` folder on https://app.netlify.com/drop. For link previews with an image, build with `URL=https://your-site.netlify.app npm run build`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Each person who opens the site gets their own games and records in their own browser.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Disclaimer
+
+Speedrundle is a fan-made launcher and stopwatch. It is not affiliated with, endorsed by or connected to The New York Times, The Washington Post, or the makers of any game it links to. It only links out: it never embeds, scrapes or copies a game. Game names belong to their owners. All illustrations are original.
