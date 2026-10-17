@@ -109,6 +109,22 @@ function WapoCrossword() {
   );
 }
 
+function MinuteCryptic() {
+  return (
+    <Frame>
+      <g transform="rotate(-5 46 45)">
+        <rect x="12" y="16" width="62" height="58" rx="8" fill="#fff" {...s} />
+        <path d="M22 30 H62 M22 40 H56 M22 50 H48" {...s} strokeWidth="2.5" />
+        <text x="44" y="67" fontFamily="var(--font-fredoka)" fontWeight="700" fontSize="12" fill={INK}>(8)</text>
+      </g>
+      <path d="M84 16 H106 M84 76 H106" {...s} strokeWidth="4" />
+      <path d="M87 18 H103 L95 46 L103 74 H87 L95 46 Z" fill="#fff" {...s} strokeWidth="2.75" />
+      <path d="M90 26 H100 L95 40 Z" fill="#ffc93c" />
+      <path d="M95 60 L100 71 H90 Z" fill="#ffc93c" />
+    </Frame>
+  );
+}
+
 function Globle() {
   return (
     <Frame>
@@ -166,6 +182,7 @@ const ART: Record<string, () => ReactNode> = {
   "nyt-crossword": NytCrossword,
   "spelling-bee": SpellingBee,
   "wapo-crossword": WapoCrossword,
+  "minute-cryptic": MinuteCryptic,
   globle: Globle,
   bandle: Bandle,
   spotle: Spotle,

@@ -36,6 +36,7 @@ Pick the daily puzzle games you already play: Wordle, Connections, NYT Mini, Spe
 | NYT Crossword | nytimes.com/crosswords/game/daily | Subscription |
 | NYT Spelling Bee | nytimes.com/puzzles/spelling-bee | Subscription |
 | Washington Post Crossword | washingtonpost.com/games/crossword | Free |
+| Minute Cryptic | minutecryptic.com | Free |
 | Globle | globle-game.com | Free |
 | Bandle | bandle.app | Free |
 | Spotle | spotle.io | Free |

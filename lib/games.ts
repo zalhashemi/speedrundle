@@ -65,6 +65,14 @@ export const PRESETS: Preset[] = [
     color: "pink",
   },
   {
+    key: "minute-cryptic",
+    name: "Minute Cryptic",
+    blurb: "One bite-size cryptic clue a day.",
+    url: "https://www.minutecryptic.com/",
+    access: "free",
+    color: "blue",
+  },
+  {
     key: "globle",
     name: "Globle",
     blurb: "Find the mystery country by getting warmer.",

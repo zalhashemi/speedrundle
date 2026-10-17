@@ -29,7 +29,7 @@ export default function AboutPage() {
         </ul>
         <h2 className="mt-2 text-2xl font-semibold">Not affiliated</h2>
         <p>
-          {APP_NAME} is not affiliated with, endorsed by or connected to The New York Times, The Washington Post, or the makers of Globle, Bandle, Spotle or any
+          {APP_NAME} is not affiliated with, endorsed by or connected to The New York Times, The Washington Post, or the makers of Minute Cryptic, Globle, Bandle, Spotle or any
           other game it links to. Game names belong to their owners and are used only to describe where the links go. The illustrations are original. Some games
           need an account or a subscription on their own site.
         </p>
